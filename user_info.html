@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Info</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>User Info</h1>
+    </header>
+
+    <main>
+        <section class="user-info">
+            <h2>Parent Information</h2>
+            <form id="parentForm">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="text" id="surname" placeholder="Surname" required>
+                <input type="text" id="address" placeholder="Address" required>
+                <button type="submit">Submit</button>
+            </form>
+
+            <h2>Child Information</h2>
+            <form id="childForm">
+                <input type="text" id="childName" placeholder="Child's Name" required>
+                <input type="number" id="age" placeholder="Age" required>
+                <input type="text" id="gender" placeholder="Gender" required>
+                <button type="submit">Add Child</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Student Progress Tracker</p>
+    </footer>
+
+    <!-- Firebase JavaScript libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+
+    <!-- Firebase configuration -->
+    <script src="firebase-config.js"></script>
+
+    <!-- Your custom JavaScript for user info -->
+    <script src="user_info.js"></script>
+</body>
+
+</html>
